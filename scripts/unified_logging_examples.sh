@@ -77,6 +77,12 @@ sudo log show --predicate 'processImagePath contains "sudo"'
 #filter for failed password attempts
 sudo log show --predicate 'eventMessage contains "Failed to authenticate user"'
 
+#
+sudo log show --predicate 'eventMessage contains "sending status (macOS Sierra)"'
+
+#app store activity
+sudo log show --predicate 'subsystem == "com.apple.commerce"'
+
 
 #====================================
 # Log Stream
